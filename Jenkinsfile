@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout code') {
       steps {
-        git(url: 'https://github.com/TaraGithub/new-repo', branch: 'main')
+        git(url: 'https://github.com/TaraGithub/new-repo', branch: 'main', credentialsId: 'GithubCred')
       }
     }
 
